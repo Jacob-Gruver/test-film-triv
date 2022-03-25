@@ -35,6 +35,7 @@ export default {
   min-height: 100%;
   
 }
+
 main#router-view-slot{
   background: green;
 } 
