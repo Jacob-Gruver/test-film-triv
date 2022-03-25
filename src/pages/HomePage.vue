@@ -1,11 +1,8 @@
 <template>
-    <div class="home">
-        <div>
-            <h2>
-                This is the Home Page
-            </h2>
-        </div>
-        
+    <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
+        <h1 class="my-5 bg-dark text-light p-3 rounded d-flex align-items-center">
+            <span class="mx-2 text-white">Film-Trivia</span>
+        </h1>
     </div>
 </template>
 <script>
@@ -14,6 +11,12 @@ export default {
     
 }
 </script>
-<style lang="">
+<style scoped>
+div.home {
+    text-align: center;
+    user-select: none;
+
+
+}
     
 </style>

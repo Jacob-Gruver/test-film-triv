@@ -18,7 +18,7 @@ export default {
 </script>
 <style scoped>
 nav {
-    background-color: aqua;
+    background-color: grey;
 
 }
 /* .dropdown-menu {

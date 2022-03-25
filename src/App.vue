@@ -5,6 +5,13 @@
   <main>
     <router-view />
   </main>
+  <footer class="footer">
+    <h4 class="text-secondary text center p-4">
+      <span>
+        Insert smart remark here!
+      </span>
+    </h4>
+  </footer>
 </template>
 
 <script>
