@@ -33,18 +33,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   min-height: 100%;
-  
 }
 
 main#router-view-slot{
   background: green;
-} 
-.footer{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 100px;
-  width: 100%;
-  overflow: hidden;
 }
 </style>
