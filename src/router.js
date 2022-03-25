@@ -1,23 +1,19 @@
 import { createWebHashHistory, createRouter } from "vue-router";
 
-import HomePage from './pages/HomePage.vue'
-
-import AboutPage from './pages/AboutPage.vue'
-
-// function loadPage(page) {
-//     return () => import(`./pages/${page}.vue`)
-// }
+function loadPage(page) {
+    return () => import(`./pages/${page}.vue`)
+}
 
 const routes = [
     {
-        path: '/homepage',
+        path: '/',
         name: 'HomePage',
-        component: HomePage
+        component: loadPage('HomePage')
     },
     {
         path: '/aboutpage',
         name: 'AboutPage',
-        component: AboutPage
+        component: loadPage('AboutPage')
     }
 
 
