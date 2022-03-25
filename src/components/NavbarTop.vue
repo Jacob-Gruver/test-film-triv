@@ -2,14 +2,12 @@
     <nav class="navbar navbar-expand-lg">
       <div>
         <button type="button" class="btn btn-secondary m-2 p-2">
-          <router-link to="/homepage">Home</router-link>
+          <router-link to="/">Home</router-link>
         </button>
         <button type="button" class="btn btn-secondary m-2 p-2">
           <router-link to="/aboutpage">About</router-link>
         </button>
       </div>
-        <!-- <router-link to="/homepage">Home</router-link>
-        <router-link to="/aboutpage">About</router-link> -->
   </nav>
 </template>
 <script>
