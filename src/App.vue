@@ -2,7 +2,7 @@
   <header>
     <navbar-top />
   </header>
-  <main>
+  <main id="router-view-slot">
     <router-view />
   </main>
   <footer class="footer">
@@ -32,6 +32,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  min-height: 100%;
   
+}
+main#router-view-slot{
+  background: green;
+} 
+.footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
 }
 </style>

@@ -15,6 +15,8 @@ export default {
 div.home {
     text-align: center;
     user-select: none;
+    justify-content: center;
+
 
 
 }
