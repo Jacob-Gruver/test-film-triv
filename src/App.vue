@@ -25,8 +25,9 @@ export default {
 }
 </script>
 
-<style>
-#app {
+<style lang>
+
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -38,5 +39,5 @@ export default {
 main#router-view-slot{
   background: green;
   flex-grow: 1;
-}
+} */
 </style>
