@@ -1,25 +1,39 @@
 <template>
-    <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-        <h1 class="my-5 bg-dark text-light p-3 rounded d-flex align-items-center">
-            <span class="mx-2 text-white">Home-Page</span>
-        </h1>
-    </div>
+  <div
+    class="
+      home
+      flex-grow-1
+      d-flex
+      flex-column
+      align-items-center
+      justify-content-center
+    "
+  >
+    <h1 class="my-5 bg-dark text-light p-3 rounded d-flex align-items-center">
+      <span class="mx-2 text-white">Home-Page</span>
+      <img class="my-5" src="../assets/img/autobot.png" />
+      <img class="my-5" src="../assets/img/decepticon.png" />
+    </h1>
+  </div>
 </template>
 <script>
 export default {
-    name: 'HomePage'
-    
-}
+  name: "HomePage",
+};
 </script>
 <style scoped>
 div.home {
-    text-align: center;
-    user-select: none;
-    display: flex;
-    overflow-x: hidden;
-
-
-
+  text-align: center;
+  user-select: none;
+  display: flex;
+  overflow-x: hidden;
+  background-image: url(../assets/img/homebg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-    
+img {
+  height: 200px;
+  width: 200px;
+}
 </style>
