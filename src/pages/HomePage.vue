@@ -1,5 +1,5 @@
 <template>
-    <div class="home d-flex flex-grow-1 justify-content-center">
+    <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
         <h1 class="my-5 bg-dark text-light p-3 rounded d-flex align-items-center">
             <span class="mx-2 text-white">Home-Page</span>
         </h1>
@@ -15,6 +15,8 @@ export default {
 div.home {
     text-align: center;
     user-select: none;
+    display: flex;
+    overflow-x: hidden;
 
 
 
