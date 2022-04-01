@@ -27,6 +27,9 @@ div.home {
   user-select: none;
   display: flex;
   overflow-x: hidden;
+  display: flex;
+  height: 770.2px;
+  flex-grow: 1;
   background-image: url(../assets/img/homebg.jpg);
   background-position: center;
   background-size: cover;
