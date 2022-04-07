@@ -6,10 +6,11 @@
     <router-view />
   </main>
   <footer class="footer">
-    <h4 class="text-secondary text center p-4">
-      <span>
+    <h4 class="text-danger text-center bg-dark p-4">
+      <span class="mx-2 text-warning"><img src="./assets/img/tfword.gif"></span>
+      <!-- <span>
         Insert smart remark here!
-      </span>
+      </span> -->
     </h4>
   </footer>
 </template>
@@ -43,6 +44,11 @@ export default {
 main#router-view-slot{
   background: green;
   flex-grow: 1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
 }
 /* #app {
   display: flex;
