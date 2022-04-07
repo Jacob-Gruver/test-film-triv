@@ -14,6 +14,11 @@ const routes = [
         path: '/aboutpage',
         name: 'AboutPage',
         component: loadPage('AboutPage')
+    },
+    {
+        path: '/tfcollection',
+        name: 'TfCollection',
+        component: loadPage('TfCollection')
     }
 
 

@@ -5,6 +5,9 @@
           <router-link to="/">Home</router-link>
         </button>
         <button type="button" class="btn btn-secondary m-2 p-2">
+          <router-link to="/tfcollection">Collection</router-link>
+        </button>
+        <button type="button" class="btn btn-secondary m-2 p-2">
           <router-link to="/aboutpage">About</router-link>
         </button>
       </div>
@@ -13,7 +16,6 @@
 <script>
 export default {
     name: 'NavbarTop'
-    
 }
 </script>
 <style scoped>
