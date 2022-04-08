@@ -246,7 +246,7 @@ export default {
   display: flex;
   overflow-x: hidden;
   display: flex;
-  height: 770.2px;
+  height: 900px;
   flex-grow: 1;
   background-image: url(../assets/img/bg-temp.jpg);
 }
