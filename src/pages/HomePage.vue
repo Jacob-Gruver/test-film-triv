@@ -24,7 +24,6 @@ div.home {
   user-select: none;
 
   /* position: fixed; */
-  top: 12;
   width: 100%;
 
 
