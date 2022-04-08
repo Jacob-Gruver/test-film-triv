@@ -2,7 +2,7 @@
   <div
     class="TfCollection pb-3 flex-grow-1 d-flex flex-column align-items-center justify-content-center"
   >
-    <!-- <div class="row">
+    <div class="row">
       <div class="col">
         <form>
           <div class="row p-2">
@@ -187,7 +187,7 @@
           </button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- <div class="row">
       <div class="col">
         <Transformers
@@ -201,42 +201,41 @@
 </template>
 
 <script>
-// import { computed, onMounted, reactive } from 'vue'
-// import { logger } from '../utils/Logger'
-// import { robotService } from '../services/RobotService'
-// import { useRouter } from 'vue-router'
-// import { AppState } from '../AppState'
+import { computed, onMounted, reactive } from 'vue'
+import { robotService } from '../services/RobotService'
+import { useRouter } from 'vue-router'
+import { AppState } from '../AppState'
 
 export default {
   name: 'TfCollection',
-  // setup() {
-  //   const router = useRouter()
-  //   const state = reactive({
-  //     transformers: computed(() => AppState.transformers),
-  //     account: computed(() => AppState.account),
-  //     newTransformer: {
-  //       specs: {}
-  //     }
-  //   })
-  //   onMounted(() => {
-  //     try {
-  //       robotService.getRobots()
-  //     } catch (error) {
-  //       logger.error(error)
-  //     }
-  //   })
-  //   return {
-  //     state,
-  //     async addArobot() {
-  //       try {
-  //         const _id = await robotService.addArobot(state.newTransformer)
-  //         router.push({ name: 'TfTechSpec', id: _id })
-  //       } catch (error) {
-  //         logger.error(error)
-  //       }
-  //     }
-  //   }
-  // }
+  setup() {
+    const router = useRouter()
+    const state = reactive({
+      transformers: computed(() => AppState.transformers),
+      account: computed(() => AppState.account),
+      newTransformer: {
+        specs: {}
+      }
+    })
+    onMounted(() => {
+      try {
+        robotService.getRobots()
+      } catch (error) {
+        error(error)
+      }
+    })
+    return {
+      state,
+      async addArobot() {
+        try {
+          const _id = await robotService.addArobot(state.newTransformer)
+          router.push({ name: 'TfTechSpec', id: _id })
+        } catch (error) {
+          error(error)
+        }
+      }
+    }
+  }
 }
 </script>
 <style scoped>
