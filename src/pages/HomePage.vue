@@ -22,10 +22,17 @@ export default {
 div.home {
   text-align: center;
   user-select: none;
+
+  /* position: fixed; */
+  top: 12;
+  width: 100%;
+
+
+
   display: flex;
   overflow-x: hidden;
   display: flex;
-  height: 770.2px;
+  height: 900.2px;
   flex-grow: 1;
   background-image: url(../assets/img/homebg.jpg);
   background-position: center;
