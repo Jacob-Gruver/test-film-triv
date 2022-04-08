@@ -188,7 +188,7 @@
         </form>
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col">
         <Transformers
           v-for="transformer in state.transformers"
@@ -196,7 +196,7 @@
           :tf-prop="transformer"
         />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -239,7 +239,7 @@ export default {
   // }
 }
 </script>
-<style scoped lang="scss">
+<style scoped>
 .TfCollection {
   background-image: url(../assets/img/bg-temp.jpg);
 }
