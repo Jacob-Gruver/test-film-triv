@@ -1,8 +1,8 @@
 <template>
   <div
-    class="TfCollection pb-3 pt-5 mt-5 flex-grow-1 d-flex flex-column align-items-center justify-content-center"
+    class="TfCollection pb-3 flex-grow-1 d-flex flex-column align-items-center justify-content-center"
   >
-    <div class="row">
+    <!-- <div class="row">
       <div class="col">
         <form>
           <div class="row p-2">
@@ -187,7 +187,7 @@
           </button>
         </form>
       </div>
-    </div>
+    </div> -->
     <!-- <div class="row">
       <div class="col">
         <Transformers
@@ -241,6 +241,13 @@ export default {
 </script>
 <style scoped>
 .TfCollection {
+  text-align: center;
+  user-select: none;
+  display: flex;
+  overflow-x: hidden;
+  display: flex;
+  height: 770.2px;
+  flex-grow: 1;
   background-image: url(../assets/img/bg-temp.jpg);
 }
 </style>
